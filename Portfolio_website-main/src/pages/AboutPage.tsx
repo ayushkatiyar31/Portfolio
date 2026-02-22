@@ -3,21 +3,31 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import PageTransition from "@/components/layout/PageTransition";
 import BubbleBackground from "@/components/effects/BubbleBackground";
-import { GraduationCap, Target, Code2, Users, MapPin, Mail, Phone } from "lucide-react";
+import { GraduationCap, Code2, Briefcase, Users, MapPin, Mail, Phone } from "lucide-react";
 
 const timeline = [
   {
     year: "2022 – 2026",
     title: "B.Tech in Computer Science & IT",
     subtitle: "KIET Group of Institutions, Ghaziabad",
-    description: "Currently pursuing B.Tech with CGPA: 7.35/10. Focus on software engineering, web development, and data structures.",
+    description:
+      "Pursuing B.Tech with CGPA: 7.35/10. Strong foundation in Data Structures, Software Engineering, and Full-Stack Web Development.",
     icon: GraduationCap,
   },
   {
-    year: "Aug 2023 – Aug 2024",
-    title: "Frontend Developer",
-    subtitle: "DSDL Club",
-    description: "Led end-to-end frontend development. Mentored 30+ students on web development. Improved website load speed by 25%.",
+    year: "June 2025 – Dec 2025",
+    title: "Full Stack Engineer Intern",
+    subtitle: "Zappy (Remote - Gurgaon, India)",
+    description:
+      "Developed scalable full-stack features using React, Node.js, Express.js, and MongoDB. Engineered optimized REST APIs and structured backend modules with modular architecture in an agile environment.",
+    icon: Briefcase,
+  },
+  {
+    year: "April 2025 – May 2025",
+    title: "Web Development Intern",
+    subtitle: "Proxenix (Remote)",
+    description:
+      "Built responsive frontend components, integrated APIs, and collaborated in structured code reviews following professional development standards.",
     icon: Code2,
   },
 ];
@@ -30,7 +40,10 @@ const AboutPage = () => {
     <PageTransition>
       <Helmet>
         <title>About | Ayush Katiyar</title>
-        <meta name="description" content="Learn about Ayush Katiyar - B.Tech CSE student at KIET, passionate Full-Stack Developer with experience in MERN stack development." />
+        <meta
+          name="description"
+          content="Ayush Katiyar - Full Stack Developer specializing in MERN stack, REST APIs, WebSockets, JWT authentication, and scalable web applications."
+        />
       </Helmet>
 
       <BubbleBackground />
@@ -42,6 +55,7 @@ const AboutPage = () => {
 
         <div className="container mx-auto px-6 relative">
           <div className="max-w-5xl mx-auto">
+
             {/* Header */}
             <motion.div
               ref={ref}
@@ -54,11 +68,13 @@ const AboutPage = () => {
                 <Users className="w-4 h-4" />
                 ./about
               </span>
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6">
                 ABOUT <span className="gradient-text">ME</span>
               </h1>
+
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A passionate developer on a mission to build impactful digital solutions.
+                Full Stack Developer passionate about building scalable, real-world web applications.
               </p>
             </motion.div>
 
@@ -70,16 +86,17 @@ const AboutPage = () => {
               className="glass-card p-8 rounded-2xl mb-12 border-l-4 border-l-primary"
             >
               <h2 className="text-2xl font-bold font-display mb-4">WHO I AM</h2>
+
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I'm <span className="text-primary font-semibold">Ayush Katiyar</span>, a B.Tech Computer Science student at KIET Group of Institutions, Ghaziabad. 
-                I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+                I'm <span className="text-primary font-semibold">Ayush Katiyar</span>, a Computer Science student and Full Stack Developer specializing in the MERN stack. 
+                I build scalable applications with secure authentication (JWT), RESTful APIs, WebSocket-based real-time systems, and optimized backend architectures.
               </p>
+
               <p className="text-muted-foreground leading-relaxed mb-6">
-                My journey in tech started with a curiosity for how websites work, which quickly evolved into a passion for creating 
-                scalable, user-centric applications. I have led frontend development at the DSDL Club, where I mentored 30+ students 
-                and improved website performance by 25%.
+                During my internships at Zappy and Proxenix, I worked on production-ready applications, API optimization, modular backend structuring, and responsive UI systems.
+                I’ve also developed platforms like DevLinker, StudyNotion, and an Employee HR System featuring RBAC, payment integration, and performance optimization.
               </p>
-              
+
               {/* Contact Info */}
               <div className="grid sm:grid-cols-3 gap-4 pt-6 border-t border-border">
                 <div className="flex items-center gap-3">
@@ -88,19 +105,27 @@ const AboutPage = () => {
                   </div>
                   <span className="text-sm text-muted-foreground">Ghaziabad, India</span>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-lg bg-primary/10">
                     <Mail className="w-4 h-4 text-primary" />
                   </div>
-                  <a href="mailto:ayushkatiyar827@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors truncate">
+                  <a
+                    href="mailto:ayushkatiyar827@gmail.com"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors truncate"
+                  >
                     ayushkatiyar827@gmail.com
                   </a>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-lg bg-primary/10">
                     <Phone className="w-4 h-4 text-primary" />
                   </div>
-                  <a href="tel:+917518933205" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="tel:+917518933205"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
                     +91-7518933205
                   </a>
                 </div>
@@ -116,9 +141,9 @@ const AboutPage = () => {
             >
               {[
                 { value: "7.35", label: "CGPA" },
-                { value: "200+", label: "DSA Problems" },
-                { value: "30+", label: "Students Mentored" },
-                { value: "25%", label: "Performance Boost" },
+                { value: "3+", label: "Major Projects" },
+                { value: "2", label: "Internships" },
+                { value: "40%", label: "Backend Optimization" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -142,10 +167,10 @@ const AboutPage = () => {
               <h2 className="text-2xl font-bold font-display text-center mb-8">
                 EDUCATION & <span className="gradient-text">EXPERIENCE</span>
               </h2>
-              
+
               <div className="relative">
                 <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-transparent" />
-                
+
                 <div className="space-y-8">
                   {timeline.map((item, index) => (
                     <motion.div
@@ -170,6 +195,7 @@ const AboutPage = () => {
                 </div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>
