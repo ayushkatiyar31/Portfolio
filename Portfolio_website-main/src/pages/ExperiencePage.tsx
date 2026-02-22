@@ -3,45 +3,81 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import PageTransition from "@/components/layout/PageTransition";
 import BubbleBackground from "@/components/effects/BubbleBackground";
-import { Briefcase, Calendar, Users, Zap, TrendingUp, Code2 } from "lucide-react";
+import { Briefcase, Calendar, Users, Zap, TrendingUp } from "lucide-react";
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company: "DSDL Club",
-    location: "KIET, Ghaziabad",
-    duration: "Aug 2023 – Aug 2024",
-    description: "Led the end-to-end frontend development of the club website, ensuring responsiveness and performance optimization.",
+    title: "Full Stack Engineer Intern",
+    company: "Zappy",
+    location: "Remote (Gurgaon, India)",
+    duration: "June 2025 – Dec 2025",
+    description:
+      "Designed and developed scalable full-stack features for an event-tech marketplace using the MERN stack.",
     responsibilities: [
-      "Developed the club website using HTML, CSS, and JavaScript",
-      "Conducted hands-on sessions and mentored 30+ students on web development",
-      "Taught responsive UI design and Git workflows",
-      "Improved website load speed by 25% through optimized assets",
-      "Created reusable UI components for consistent design",
+      "Developed scalable full-stack features using React, Node.js, Express.js, and MongoDB",
+      "Engineered and integrated RESTful APIs with optimized MongoDB queries to reduce response latency",
+      "Structured backend modules using modular architecture and middleware-based request handling",
+      "Collaborated in an agile environment to deliver production-ready features",
+      "Improved platform stability and deployment efficiency",
     ],
     achievements: [
-      { metric: "25%", label: "Load Speed Improvement" },
-      { metric: "30+", label: "Students Mentored" },
+      { metric: "MERN", label: "Full Stack Development" },
+      { metric: "REST APIs", label: "Optimized Integration" },
     ],
-    skills: ["HTML", "CSS", "JavaScript", "Git", "Responsive Design"],
+    skills: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Agile",
+    ],
+  },
+  {
+    title: "Web Development Intern",
+    company: "Proxenix",
+    location: "Remote (India)",
+    duration: "April 2025 – May 2025",
+    description:
+      "Built responsive frontend components and enhanced UI performance using modern web development best practices.",
+    responsibilities: [
+      "Developed responsive frontend components and optimized UI performance",
+      "Implemented dynamic features using JavaScript and integrated APIs",
+      "Followed professional coding standards and participated in structured code reviews",
+      "Managed project tasks under mentorship while adhering to client requirements",
+    ],
+    achievements: [
+      { metric: "Responsive UI", label: "Performance Optimized" },
+      { metric: "Code Reviews", label: "Industry Standards" },
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API Integration",
+      "Responsive Design",
+    ],
   },
 ];
 
 const achievements = [
   {
     icon: Zap,
-    title: "200+ DSA Problems",
-    description: "Solved on LeetCode and GeeksforGeeks combined, strengthening algorithmic thinking.",
+    title: "Full-Stack Production Deployment",
+    description:
+      "Delivered production-ready features using modular backend architecture and REST APIs.",
   },
   {
     icon: Users,
-    title: "DSDL Club Selection",
-    description: "Selected as Frontend Developer through a competitive screening process.",
+    title: "Agile Collaboration",
+    description:
+      "Worked in cross-functional agile teams ensuring timely feature releases.",
   },
   {
     icon: TrendingUp,
-    title: "25% Performance Boost",
-    description: "Improved website load speed through optimization techniques.",
+    title: "Performance Optimization",
+    description:
+      "Reduced response latency through optimized MongoDB queries and API handling.",
   },
 ];
 
@@ -53,7 +89,10 @@ const ExperiencePage = () => {
     <PageTransition>
       <Helmet>
         <title>Experience | Ayush Katiyar</title>
-        <meta name="description" content="Professional experience of Ayush Katiyar - Frontend Developer at DSDL Club, mentoring students and building web applications." />
+        <meta
+          name="description"
+          content="Professional experience of Ayush Katiyar including Full Stack Engineer Intern at Zappy and Web Development Intern at Proxenix."
+        />
       </Helmet>
 
       <BubbleBackground />
@@ -64,6 +103,7 @@ const ExperiencePage = () => {
 
         <div className="container mx-auto px-6 relative">
           <div className="max-w-5xl mx-auto">
+
             {/* Header */}
             <motion.div
               ref={ref}
@@ -76,11 +116,13 @@ const ExperiencePage = () => {
                 <Briefcase className="w-4 h-4" />
                 ./experience
               </span>
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6">
                 WORK <span className="gradient-text">EXPERIENCE</span>
               </h1>
+
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Hands-on experience in frontend development, team leadership, and mentoring.
+                Hands-on experience in full-stack development, backend architecture, and frontend optimization.
               </p>
             </motion.div>
 
@@ -98,43 +140,62 @@ const ExperiencePage = () => {
                   <div className="p-6 border-b border-border/50">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                       <div>
-                        <h3 className="text-2xl font-bold font-display text-primary">{exp.title}</h3>
+                        <h3 className="text-2xl font-bold font-display text-primary">
+                          {exp.title}
+                        </h3>
                         <p className="text-lg text-foreground">{exp.company}</p>
                         <p className="text-sm text-muted-foreground">{exp.location}</p>
                       </div>
+
                       <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-sm font-mono">
                         <Calendar className="w-4 h-4 text-primary" />
                         {exp.duration}
                       </div>
                     </div>
-                    <p className="text-muted-foreground mt-4">{exp.description}</p>
+
+                    <p className="text-muted-foreground mt-4">
+                      {exp.description}
+                    </p>
                   </div>
 
                   {/* Achievements */}
                   <div className="px-6 py-4 bg-primary/5 grid grid-cols-2 gap-4">
                     {exp.achievements.map((achievement) => (
                       <div key={achievement.label} className="text-center">
-                        <p className="text-2xl font-bold text-primary font-mono">{achievement.metric}</p>
-                        <p className="text-xs text-muted-foreground">{achievement.label}</p>
+                        <p className="text-2xl font-bold text-primary font-mono">
+                          {achievement.metric}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {achievement.label}
+                        </p>
                       </div>
                     ))}
                   </div>
 
                   {/* Responsibilities */}
                   <div className="p-6">
-                    <h4 className="text-sm font-semibold font-display text-primary mb-4">KEY RESPONSIBILITIES</h4>
+                    <h4 className="text-sm font-semibold font-display text-primary mb-4">
+                      KEY RESPONSIBILITIES
+                    </h4>
+
                     <ul className="space-y-3">
                       {exp.responsibilities.map((item, i) => (
-                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-3">
+                        <li
+                          key={i}
+                          className="text-sm text-muted-foreground flex items-start gap-3"
+                        >
                           <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                           {item}
                         </li>
                       ))}
                     </ul>
 
-                    {/* Skills Used */}
+                    {/* Skills */}
                     <div className="mt-6 pt-6 border-t border-border/50">
-                      <h4 className="text-sm font-semibold font-display text-primary mb-3">SKILLS USED</h4>
+                      <h4 className="text-sm font-semibold font-display text-primary mb-3">
+                        SKILLS USED
+                      </h4>
+
                       <div className="flex flex-wrap gap-2">
                         {exp.skills.map((skill) => (
                           <span
@@ -151,14 +212,14 @@ const ExperiencePage = () => {
               ))}
             </div>
 
-            {/* Achievements Section */}
+            {/* Global Achievements */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <h2 className="text-2xl font-bold font-display text-center mb-8">
-                KEY <span className="gradient-text">ACHIEVEMENTS</span>
+                KEY <span className="gradient-text">HIGHLIGHTS</span>
               </h2>
 
               <div className="grid md:grid-cols-3 gap-6">
@@ -173,12 +234,19 @@ const ExperiencePage = () => {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-4">
                       <achievement.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold font-display mb-2">{achievement.title}</h3>
-                    <p className="text-sm text-muted-foreground">{achievement.description}</p>
+
+                    <h3 className="text-lg font-semibold font-display mb-2">
+                      {achievement.title}
+                    </h3>
+
+                    <p className="text-sm text-muted-foreground">
+                      {achievement.description}
+                    </p>
                   </motion.div>
                 ))}
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>

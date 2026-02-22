@@ -4,36 +4,46 @@ import { Code, Server, Wrench, Database } from "lucide-react";
 
 const skillCategories = [
   {
-    name: "Frontend",
+    name: "Languages",
     icon: Code,
     skills: [
-      { name: "React.js", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Framer Motion", level: 75 },
+      { name: "C++", level: 80 },
+      { name: "JavaScript", level: 90 },
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 90 },
     ],
   },
   {
-    name: "Backend",
+    name: "Frameworks & Libraries",
     icon: Server,
     skills: [
+      { name: "React.js", level: 90 },
+      { name: "Redux", level: 80 },
+      { name: "Tailwind CSS", level: 95 },
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 85 },
-      { name: "MongoDB", level: 80 },
-      { name: "PostgreSQL", level: 75 },
-      { name: "REST APIs", level: 90 },
     ],
   },
   {
-    name: "Tools",
+    name: "Databases & Tools",
+    icon: Database,
+    skills: [
+      { name: "MongoDB", level: 85 },
+      { name: "SQL", level: 75 },
+      { name: "Redis", level: 70 },
+      { name: "REST APIs", level: 90 },
+      { name: "WebSocket", level: 75 },
+      { name: "GitHub", level: 90 },
+      { name: "Postman", level: 85 },
+    ],
+  },
+  {
+    name: "Cloud & Deployment",
     icon: Wrench,
     skills: [
-      { name: "Git & GitHub", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "Figma", level: 75 },
-      { name: "Linux", level: 80 },
+      { name: "Vercel", level: 85 },
+      { name: "Netlify", level: 80 },
+      { name: "Render", level: 80 },
     ],
   },
 ];
@@ -51,7 +61,7 @@ const Skills = () => {
 
       <div className="container mx-auto px-6 relative">
         <div className="max-w-5xl mx-auto">
-          {/* Section Header */}
+          {/* Header */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 30 }}
@@ -63,15 +73,17 @@ const Skills = () => {
               <Database className="w-4 h-4" />
               ./skills
             </span>
+
             <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              TECHNICAL <span className="gradient-text">ARSENAL</span>
+              TECHNICAL <span className="gradient-text">SKILLS</span>
             </h2>
+
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built over years of learning and building real-world projects.
+              A strong foundation in full-stack development with real-world project experience.
             </p>
           </motion.div>
 
-          {/* Category Tabs */}
+          {/* Tabs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -94,7 +106,7 @@ const Skills = () => {
             ))}
           </motion.div>
 
-          {/* Skills Grid */}
+          {/* Skills */}
           <motion.div
             key={activeCategory}
             initial={{ opacity: 0, y: 20 }}
@@ -119,15 +131,22 @@ const Skills = () => {
                       {skill.level}%
                     </span>
                   </div>
+
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.level}%` }}
-                      transition={{ duration: 1, delay: index * 0.1, ease: "easeOut" }}
-                      className="h-full rounded-full relative overflow-hidden"
+                      transition={{
+                        duration: 1,
+                        delay: index * 0.1,
+                        ease: "easeOut",
+                      }}
+                      className="h-full rounded-full"
                       style={{
-                        background: "linear-gradient(90deg, hsl(200 100% 50%), hsl(180 100% 50%))",
-                        boxShadow: "0 0 10px hsl(200 100% 50% / 0.5)",
+                        background:
+                          "linear-gradient(90deg, hsl(200 100% 50%), hsl(180 100% 50%))",
+                        boxShadow:
+                          "0 0 10px hsl(200 100% 50% / 0.5)",
                       }}
                     />
                   </div>
@@ -143,20 +162,40 @@ const Skills = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-16 flex flex-wrap justify-center gap-3"
           >
-            {["React", "Node.js", "TypeScript", "MongoDB", "Tailwind", "Git", "Docker", "AWS", "PostgreSQL", "Next.js"].map(
-              (tech, index) => (
-                <motion.div
-                  key={tech}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  className="px-4 py-2 rounded-lg glass-card text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-all cursor-default"
-                >
-                  {`<${tech}/>`}
-                </motion.div>
-              )
-            )}
+            {[
+              "C++",
+              "JavaScript",
+              "HTML",
+              "CSS",
+              "React",
+              "Redux",
+              "Node.js",
+              "Express",
+              "MongoDB",
+              "SQL",
+              "Redis",
+              "WebSocket",
+              "REST API",
+              "GitHub",
+              "Postman",
+              "Vercel",
+              "Netlify",
+              "Render",
+            ].map((tech, index) => (
+              <motion.div
+                key={tech}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{
+                  duration: 0.3,
+                  delay: 0.5 + index * 0.05,
+                }}
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="px-4 py-2 rounded-lg glass-card text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-all cursor-default"
+              >
+                {`<${tech}/>`}
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </div>
