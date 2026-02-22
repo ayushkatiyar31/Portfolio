@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Ayush Katiyar | Full-Stack Developer</title>
+        <title>Ayush Katiyar | Portfolio-Website</title>
         <meta
           name="description"
           content="Ayush Katiyar - Full-Stack Developer & B.Tech CSE Student at KIET. Expert in MERN Stack, React, Node.js. View my portfolio and projects."
