@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    allowedHosts: ["portfolio-j1qk.onrender.com"], // Add this line
+  },
   plugins: [
     react(),
     mode === "development" && componentTagger(),
@@ -17,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/", // ⬅️ CHANGE THIS to always be "/"
+  base: "/",
 }));
