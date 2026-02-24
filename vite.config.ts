@@ -5,11 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
+    host: "0.0.0.0", // Changed from "::" to "0.0.0.0" for better compatibility
     port: 8080,
-  },
-  preview: {
-    allowedHosts: ["portfolio-j1qk.onrender.com"], // Add this line
   },
   plugins: [
     react(),
@@ -20,5 +17,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/",
+  base: mode === "development" ? "/" : "/Portfolio_website/",
 }));
