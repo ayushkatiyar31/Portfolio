@@ -11,13 +11,13 @@ const timeline = [
     title: "B.Tech in Computer Science & IT",
     subtitle: "KIET Group of Institutions, Ghaziabad",
     description:
-      "Pursuing B.Tech with CGPA: 7.35/10. Strong foundation in Data Structures, Software Engineering, and Full-Stack Web Development.",
+      "Pursuing B.Tech with CGPA: 7.5/10. Strong foundation in Data Structures, Software Engineering, and Full-Stack Web Development.",
     icon: GraduationCap,
   },
   {
-    year: "June 2025 – Dec 2025",
+    year: "Nov 2025 – April 2026",
     title: "Full Stack Engineer Intern",
-    subtitle: "Zappy (Remote - Gurgaon, India)",
+    subtitle: "Zappay (Remote - Gurgaon, India)",
     description:
       "Developed scalable full-stack features using React, Node.js, Express.js, and MongoDB. Engineered optimized REST APIs and structured backend modules with modular architecture in an agile environment.",
     icon: Briefcase,
@@ -93,8 +93,8 @@ const AboutPage = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
-                During my internships at Zappy and Proxenix, I worked on production-ready applications, API optimization, modular backend structuring, and responsive UI systems.
-                I’ve also developed platforms like DevLinker, StudyNotion, and an Employee HR System featuring RBAC, payment integration, and performance optimization.
+                During my internships at Zappay and Proxenix, I worked on production-ready applications, API optimization, modular backend structuring, and responsive UI systems.
+                I've also developed platforms like DevLinker, StudyNotion, and an Employee HR System featuring RBAC, payment integration, and performance optimization.
               </p>
 
               {/* Contact Info */}

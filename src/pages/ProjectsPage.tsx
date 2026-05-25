@@ -10,7 +10,7 @@ const projects = [
   id: 1,
   title: "DevLinker",
   subtitle: "MERN Stack, WebSockets, JWT",
-  duration: "April 2025 – May 2025",
+  duration: "July 2025 – Sep 2025",
   description: "A full-stack developer networking platform enabling real-time communication, gig collaboration, and community discussions.",
   problem: "Developers often lack a dedicated platform for networking, collaboration, gig opportunities, and technical discussions in one unified ecosystem.",
   features: [

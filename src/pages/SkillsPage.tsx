@@ -10,10 +10,10 @@ const skillCategories = [
     name: "Languages",
     icon: Code,
     skills: [
-      { name: "C/C++", level: 85 },
+      { name: "C++", level: 85 },
       { name: "JavaScript", level: 90 },
-      { name: "SQL", level: 80 },
-      { name: "HTML5", level: 95 },
+      { name: "TypeScript", level: 85 },
+      { name: "HTML", level: 95 },
       { name: "CSS", level: 90 },
     ],
   },
@@ -22,6 +22,7 @@ const skillCategories = [
     icon: Layers,
     skills: [
       { name: "React.js", level: 90 },
+      { name: "Next.js", level: 80 },
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 85 },
       { name: "Tailwind CSS", level: 95 },
@@ -33,10 +34,12 @@ const skillCategories = [
     icon: Wrench,
     skills: [
       { name: "Git & GitHub", level: 90 },
-      { name: "VS Code", level: 95 },
       { name: "MongoDB", level: 85 },
-      { name: "MySQL", level: 75 },
-      { name: "JWT Auth", level: 80 },
+      { name: "SQL", level: 80 },
+      { name: "Redis", level: 75 },
+      { name: "Postman", level: 90 },
+      { name: "REST APIs", level: 90 },
+      { name: "WebSockets", level: 85 },
     ],
   },
 ];

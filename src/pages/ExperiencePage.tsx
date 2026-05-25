@@ -8,9 +8,9 @@ import { Briefcase, Calendar, Users, Zap, TrendingUp } from "lucide-react";
 const experiences = [
   {
     title: "Full Stack Engineer Intern",
-    company: "Zappy",
+    company: "Zappay",
     location: "Remote (Gurgaon, India)",
-    duration: "June 2025 – Dec 2025",
+    duration: "Nov 2025 – April 2026",
     description:
       "Designed and developed scalable full-stack features for an event-tech marketplace using the MERN stack.",
     responsibilities: [
@@ -91,7 +91,7 @@ const ExperiencePage = () => {
         <title>Experience | Ayush Katiyar</title>
         <meta
           name="description"
-          content="Professional experience of Ayush Katiyar including Full Stack Engineer Intern at Zappy and Web Development Intern at Proxenix."
+          content="Professional experience of Ayush Katiyar including Full Stack Engineer Intern at Zappay and Web Development Intern at Proxenix."
         />
       </Helmet>
 

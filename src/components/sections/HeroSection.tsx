@@ -65,7 +65,7 @@ const TypewriterText = ({
 const HeroSection = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/my_resume.pdf";
     link.download = "Ayush_Katiyar_Resume.pdf";
     link.click();
   };
