@@ -17,7 +17,7 @@ const timeline = [
   {
     year: "Nov 2025 – April 2026",
     title: "Full Stack Engineer Intern",
-    subtitle: "Zappay (Remote - Gurgaon, India)",
+    subtitle: "Zappy (Remote - Gurgaon, India)",
     description:
       "Developed scalable full-stack features using React, Node.js, Express.js, and MongoDB. Engineered optimized REST APIs and structured backend modules with modular architecture in an agile environment.",
     icon: Briefcase,
@@ -93,7 +93,7 @@ const AboutPage = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
-                During my internships at Zappay and Proxenix, I worked on production-ready applications, API optimization, modular backend structuring, and responsive UI systems.
+                During my internships at Zappy and Proxenix, I worked on production-ready applications, API optimization, modular backend structuring, and responsive UI systems.
                 I've also developed platforms like DevLinker, StudyNotion, and an Employee HR System featuring RBAC, payment integration, and performance optimization.
               </p>
 
