@@ -6,28 +6,28 @@ import BubbleBackground from "@/components/effects/BubbleBackground";
 import { Folder, Github, ExternalLink, ChevronDown, ChevronUp, Zap, Clock, Users, Database } from "lucide-react";
 
 const projects = [
- {
-  id: 1,
-  title: "DevLinker",
-  subtitle: "React.js, Node.js, Express.js, MongoDB",
-  duration: "July 2025 – Sep 2025",
-  description: "Built a full-stack social platform where developers can connect via profiles, share projects, join discussions, and explore freelance gigs.",
-  problem: "Developers often lack a dedicated platform for networking, collaboration, gig opportunities, and technical discussions in one unified ecosystem.",
-  features: [
-    "Developed a modular React.js frontend with reusable components and dynamic routing for a responsive user experience",
-    "Implemented JWT-based authentication and RESTful APIs with Express.js for secure user access, profile management, and gig applications",
-    "Integrated Socket.io for real-time messaging and designed MongoDB schemas to support user profiles, projects, discussions, and gig features"
-  ],
-  techStack: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT", "Tailwind CSS"],
-  metrics: [
-    { label: "Modular Frontend", value: "Reusable Components" },
-    { label: "Real-time Features", value: "Socket.io" },
-    { label: "Authentication", value: "JWT Secured" }
-  ],
-  github: "https://github.com/ayushkatiyar31/DevLinker-Frontend",
-  live: "https://dev-linker-frontend.vercel.app/",
-  featured: true,
-},
+  {
+    id: 1,
+    title: "DevLinker",
+    subtitle: "React.js, Node.js, Express.js, MongoDB",
+    duration: "July 2025 – Sep 2025",
+    description: "Built a full-stack social platform where developers can connect via profiles, share projects, join discussions, and explore freelance gigs.",
+    problem: "Developers often lack a dedicated platform for networking, collaboration, gig opportunities, and technical discussions in one unified ecosystem.",
+    features: [
+      "Developed a modular React.js frontend with reusable components and dynamic routing for a responsive user experience",
+      "Implemented JWT-based authentication and RESTful APIs with Express.js for secure user access, profile management, and gig applications",
+      "Integrated Socket.io for real-time messaging and designed MongoDB schemas to support user profiles, projects, discussions, and gig features",
+    ],
+    techStack: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT", "Tailwind CSS"],
+    metrics: [
+      { label: "Modular Frontend", value: "Reusable Components" },
+      { label: "Real-time Features", value: "Socket.io" },
+      { label: "Authentication", value: "JWT Secured" },
+    ],
+    github: "https://github.com/ayushkatiyar31/DevLinker-Frontend",
+    live: "https://dev-linker-frontend.vercel.app/",
+    featured: true,
+  },
   {
     id: 2,
     title: "StudyNotion",
