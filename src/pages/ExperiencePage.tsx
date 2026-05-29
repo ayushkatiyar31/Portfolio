@@ -12,17 +12,16 @@ const experiences = [
     location: "Remote (Gurgaon, India)",
     duration: "Nov 2025 – April 2026",
     description:
-      "Designed and developed scalable full-stack features for an event-tech marketplace using the MERN stack.",
+      "Built and enhanced full-stack features for an event-tech marketplace using React, Node.js, Express.js, and MongoDB.",
     responsibilities: [
-      "Developed scalable full-stack features using React, Node.js, Express.js, and MongoDB",
-      "Engineered and integrated RESTful APIs with optimized MongoDB queries to reduce response latency",
-      "Structured backend modules using modular architecture and middleware-based request handling",
-      "Collaborated in an agile environment to deliver production-ready features",
-      "Improved platform stability and deployment efficiency",
+      "Built and enhanced full-stack features for an event-tech marketplace using React, Node.js, Express.js, and MongoDB",
+      "Developed and integrated RESTful APIs to support seamless communication between frontend and backend systems",
+      "Optimized MongoDB queries and backend workflows to improve application performance and response efficiency",
+      "Contributed to a modular backend architecture, improving code maintainability, scalability, and reusability",
     ],
     achievements: [
-      { metric: "MERN", label: "Full Stack Development" },
-      { metric: "REST APIs", label: "Optimized Integration" },
+      { metric: "MERN Stack", label: "Full Stack Development" },
+      { metric: "RESTful APIs", label: "Seamless Integration" },
     ],
     skills: [
       "React",
@@ -30,7 +29,7 @@ const experiences = [
       "Express.js",
       "MongoDB",
       "REST APIs",
-      "Agile",
+      "Backend Architecture",
     ],
   },
   {
@@ -39,16 +38,16 @@ const experiences = [
     location: "Remote (India)",
     duration: "April 2025 – May 2025",
     description:
-      "Built responsive frontend components and enhanced UI performance using modern web development best practices.",
+      "Developed responsive and user-friendly frontend components using modern web development practices.",
     responsibilities: [
-      "Developed responsive frontend components and optimized UI performance",
-      "Implemented dynamic features using JavaScript and integrated APIs",
-      "Followed professional coding standards and participated in structured code reviews",
-      "Managed project tasks under mentorship while adhering to client requirements",
+      "Developed responsive and user-friendly frontend components using modern web development practices",
+      "Implemented interactive features with JavaScript and integrated APIs to improve functionality and user experience",
+      "Optimized UI performance to deliver smoother and more efficient web interactions across devices",
+      "Collaborated with developers in a professional workflow, following clean coding practices and review standards",
     ],
     achievements: [
-      { metric: "Responsive UI", label: "Performance Optimized" },
-      { metric: "Code Reviews", label: "Industry Standards" },
+      { metric: "Responsive UI", label: "User-Friendly Components" },
+      { metric: "Performance", label: "Cross-Device Optimization" },
     ],
     skills: [
       "HTML",
@@ -56,6 +55,7 @@ const experiences = [
       "JavaScript",
       "API Integration",
       "Responsive Design",
+      "UI Optimization",
     ],
   },
 ];
