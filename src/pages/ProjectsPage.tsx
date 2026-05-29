@@ -51,9 +51,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 1,
-    title: "Employee HR Platform",
-    subt3,
+    id: 3,
     title: "Employee HR Platform",
     subtitle: "MERN Stack, Tailwind CSS, JWT",
     duration: "Nov 2024 – Dec 2024",
@@ -68,7 +66,9 @@ const projects = [
     metrics: [
       { label: "Query Optimization", value: "+40%" },
       { label: "Dashboard Performance", value: "+25%" },
-      { label: "RBAC Roles", value: "4 Rolesoyee-hr-platform",
+      { label: "RBAC Roles", value: "4 Roles" },
+    ],
+    github: "https://github.com/ayushkatiyar31/Employee-hr-platform",
     live: "https://employee-hr-platformm.netlify.app/",
     featured: true,
   },
